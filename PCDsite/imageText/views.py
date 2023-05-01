@@ -33,7 +33,7 @@ class IndexView(TemplateView):
     
     def post(self, request):
         if 'uploadFile' in request.FILES:
-
+            selected_option = request.POST.get('checkbox')
             uploaded_images = request.FILES.getlist('uploadFile')
             for uploaded_image in uploaded_images:
                 # Process the image
@@ -43,8 +43,12 @@ class IndexView(TemplateView):
                 with open('processed_image.txt', 'w') as f:
                     f.write(str(uploaded_image))
 
-            return HttpResponse('Image processed and saved to text file.')
-        
+                if selected_option == '1':
+                    return HttpResponse('Image processed and saved to text file plus the selected option was CIN.')
+                
+                elif selected_option == '2':
+                    return HttpResponse('Image processed and saved to text file plus the selected option was Football card.')
+                
         elif 'uploadFileDnD' in request.FILES:
             uploaded_images_DnD = request.FILES.getlist('uploadFileDnD')
             for uploaded_image_DnD in uploaded_images_DnD:

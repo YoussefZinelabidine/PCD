@@ -99,3 +99,41 @@ function handleDrop(e) {
   }
 }
 
+// making sure only one check box can be checked at the same time
+function validateForm() {
+  var checkboxes = document.getElementsByName("checkbox");
+  var checkedCount = 0;
+  for (var i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      checkedCount++;
+    }
+  }
+  if (checkedCount != 2) {
+    alert("Please select exactly one checkboxes.");
+    return false;
+  }
+  return true;
+}
+
+//handling the check boxes
+const checkbox1 = document.getElementById("checkbox_1");
+const checkbox3 = document.getElementById("checkbox_3");
+
+checkbox1.addEventListener("change", function() {
+  if (this.checked) {
+    checkbox3.checked = true;
+  }else{
+    checkbox3.checked = false;
+  }
+});
+
+const checkbox2 = document.getElementById("checkbox_2");
+const checkbox4 = document.getElementById("checkbox_4");
+
+checkbox2.addEventListener("change", function() {
+  if (this.checked) {
+    checkbox4.checked = true;
+  }else{
+    checkbox4.checked = false;
+  }
+});
