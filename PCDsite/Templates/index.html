@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Creative Studio landing page.">
+    <meta name="author" content="Devcrud">
+    <title>image-text converter</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="../static/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Creative Studio main styles -->
+	<link rel="stylesheet" href="../static/css/creative-studio.css">
+    <link rel="stylesheet" href="../static/css/test.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../static/imgs/logo.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Converter">Converter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Page Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h6 class="subtitle">Small Team With Big Ideas</h6>
+            <h1 class="title">Image Converter</h1>              
+        </div>      
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Box -->
+    <div class="box text-center">
+        <div class="box-item">
+            <i class="ti-credit-card"></i>
+            <h6 class="box-title">CIN</h6>
+            <p>convert national identity card into text files.</p>
+        </div>
+        <div class="box-item">
+            <i class="ti-basketball"></i>
+            <h6 class="box-title">football card</h6>
+            <p>convert football cards images into text.</p>
+        </div>
+        <div class="box-item">
+            <i class="ti-write"></i>
+            <h6 class="box-title">hand-written</h6>
+            <p>convert hand-written images into text file.</p>
+        </div>
+    </div>
+    <!-- End of Box -->
+
+    <!-- drag and drop zone -->
+    <section id="Converter">
+        <div class="container drag-container">
+            <div id="dropzone" class="dropzone">Drag and drop files here</div>
+        </div>
+
+        <div class="buttons text-center">
+            <form action="{% url 'index' %}"  method="POST" enctype="multipart/form-data" name="uploadForm" id ="uploadForm">
+                <!-- Choose image file button -->
+                <button class="btn btn-primary rounded w-lg btn-lg my-1" id="import-files-btn" type="button">Choose file</button>
+                <input id="import-files-inp" type="file" name="uploadFile" hidden>
+
+                <!-- Submit image file button -->
+                <button class="btn btn-outline-secondary rounded w-lg btn-lg my-1" id="Submit-btn" type="submit" style="display: none;">Submit image</button>
+            </form>
+        </div> 
+    </section>
+    <!-- End of drag and drop zone -->
+
+    <!-- core  -->
+    <script src="../static/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="../static/vendors/bootstrap/bootstrap.bundle.js"></script>
+    
+    <!-- bootstrap affix -->
+    <script src="../static/vendors/bootstrap/bootstrap.affix.js"></script>
+    
+    <!-- Creative Studio js -->
+    <script src="../static/js/creative-studio.js"></script>
+
+    <!-- drag and drop js -->
+    <script src="../static/js/main.js"></script>
+
+</body>
+</html>
