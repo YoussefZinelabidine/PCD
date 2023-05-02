@@ -1,0 +1,26 @@
+{
+    "02092227": {
+        "lastName": "ﺍﻟﺠﻴﻨﻴﺎﻧﻲ",
+        "firstName1": "ﻣﻨﻴﺔ ﺑﻨﺖ ﻋﺒﺪﺍﻟﺮﺯﺍﻕ",
+        "firstName2": "ﺣﺮﻡ ﺭﻗﻴﻖ ﺑﺎﻟﺤﺎﺝ",
+        "birthDate": "06 ﺩﻳﺴﻤﻴﺮ 1971",
+        "birthPlace": "ﺍﻟﻘﻴﺮﻭﺍﻥ",
+        "cinNumber": "02092227"
+    },
+    "11953191": {
+        "lastName": "ﺑﺎﻟﺤﺎﺝ",
+        "firstName1": "ﻫﺒﺔ",
+        "firstName2": "ﺑﻨﺖ ﺭﻓﻴﻖ ﺑﻦ ﻣﺤﻤﺪ",
+        "birthDate": "2 ﻣﺎﺭﺱ 1999",
+        "birthPlace": "ﺍﻟﻘﻴﺮﻭﺍﻥ",
+        "cinNumber": "11953191"
+    },
+    "02084310": {
+        "lastName": "ﺑﺎﻟﺤﺎﺝ",
+        "firstName1": "ﺭﻓﻴﻖ",
+        "firstName2": "",
+        "birthDate": "2 ﺩﻳﺴﻤﻴﺮ 1971",
+        "birthPlace": "ﺍﻟﻘﻴﺮﻭ ﺍﻥ",
+        "cinNumber": "02084310"
+    }
+}
