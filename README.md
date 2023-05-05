@@ -2,24 +2,24 @@
 PCD project for the end of the 2nd year of engineering at ENSI
 
 # For first time after cloning the project
-you need to setup the virtual environment again
-1- delete the djangoenv folder
-2- run the command "python -m venv djangoenv" in the PCD folder. This will create the venv folder
-3- run the command "djangoenv\scripts\activate"
-4- you need to install all the packages that you need to use this includes
-    pip install django
-    pip install numpy
-    pip install pymongo
-    pip install djongo
-    pip install pytz
-    pip install opencv-python
-    pip install pandas
-    pip install tabula-py
-5- download mongodb at "https://www.mongodb.com/try/download/community"
-6- while in the virtual environment django env run command "cd PCDsite"
-7- run the command "python manage.py runserver"
-8- go to local server at "127.0.0.1:8000"
-9- Important to note DON'T PUSH YOUR CODE WITH YOUR CONFIGS, only push the code that you changed 
+you need to setup the virtual environment again <br />
+1- delete the djangoenv folder<br />
+2- run the command "python -m venv djangoenv" in the PCD folder. This will create the venv folder<br />
+3- run the command "djangoenv\scripts\activate"<br />
+4- you need to install all the packages that you need to use this includes<br />
+    pip install django<br />
+    pip install numpy<br />
+    pip install pymongo<br />
+    pip install djongo<br />
+    pip install pytz<br />
+    pip install opencv-python<br />
+    pip install pandas<br />
+    pip install tabula-py<br />
+5- download mongodb at "https://www.mongodb.com/try/download/community"<br />
+6- while in the virtual environment django env run command "cd PCDsite"<br />
+7- run the command "python manage.py runserver"<br />
+8- go to local server at "127.0.0.1:8000"<br />
+9- Important to note DON'T PUSH YOUR CODE WITH YOUR CONFIGS, only push the code that you changed <br />
 
 
 
