@@ -24,11 +24,17 @@ class IndexView(TemplateView):
 
                 if selected_option == '1':
                     # Run the algorithme for the cin card
-                    return HttpResponse('Image processed and saved to text file plus the selected option was CIN.')
+                    with open('processed_image.txt', 'rb') as f:
+                        response = HttpResponse(f.read(), content_type='text/plain')
+                        response['Content-Disposition'] = 'attachment; filename="processed_image.txt"'
+                        return response
                 
                 elif selected_option == '2':
                     # Run the algorithme for the football card
-                    return HttpResponse('Image processed and saved to text file plus the selected option was Football card.')
+                    with open('processed_image.txt', 'rb') as f:
+                        response = HttpResponse(f.read(), content_type='text/plain')
+                        response['Content-Disposition'] = 'attachment; filename="processed_image.txt"'
+                        return response
                 
         elif 'uploadFileDnD' in request.FILES:
             uploaded_images_DnD = request.FILES.getlist('uploadFileDnD')
@@ -39,11 +45,17 @@ class IndexView(TemplateView):
 
                 if selected_option == '1':
                     # Run the algorithme for the cin card
-                    return HttpResponse('Image processed and saved to text file plus the selected option was CIN.')
+                    with open('processed_image.txt', 'rb') as f:
+                        response = HttpResponse(f.read(), content_type='text/plain')
+                        response['Content-Disposition'] = 'attachment; filename="processed_image.txt"'
+                        return response
                 
                 elif selected_option == '2':
                     # Run the algorithme for the football card
-                    return HttpResponse('Image processed and saved to text file plus the selected option was Football card.')
+                     with open('processed_image.txt', 'rb') as f:
+                        response = HttpResponse(f.read(), content_type='text/plain')
+                        response['Content-Disposition'] = 'attachment; filename="processed_image.txt"'
+                        return response
         
         else:
             return HttpResponse('no image')
